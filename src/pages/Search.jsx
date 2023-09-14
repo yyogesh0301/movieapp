@@ -3,7 +3,6 @@ import Contextpage from '../Contextpage';
 import Moviecard from '../components/Moviecard';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from '../components/Header';
-// import { Pagebtn } from '../components/Pagebtn';
 import { Link, useParams } from 'react-router-dom'
 import { HiChevronLeft } from "react-icons/hi";
 
@@ -14,9 +13,9 @@ function Search() {
     const { query } = useParams()
 
     useEffect(() => {
-        // Call fetchSearch(query) only once when the component mounts
+        
         fetchSearch(query);
-    }, [query]); // Only re-run if 'query' or 'fetchSearch' changes
+    }, [query]); 
 
     return (
         <section>

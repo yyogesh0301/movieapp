@@ -5,7 +5,7 @@ import Searchbar from "../components/Searchbar";
 import { useParams } from 'react-router-dom'
 import Search from "../pages/Search"
 
-
+// movie container
 function Container() {
     const { setMovies } = useContext(Contextpage);
     const { query } = useParams()

@@ -22,15 +22,15 @@ export function MovieProvider({ children }) {
   const [genres, setGenres] = useState([])
   const [loader, setLoader] = useState(true);
   const [backgenre, setBackGenre] = useState(false);
-  const [user, setUser] = useAuthState(auth)//=======> firebase custom hooks state
-  const navigate = useNavigate();// =====> navigate page
+  const [user, setUser] = useAuthState(auth);
+  const navigate = useNavigate();
 
   const APIKEY = import.meta.env.VITE_API_KEY;
 
 
   useEffect(() => {
     if (page < 1) {
-      setPage(1)  // Increment page to 1 if it is less than 1.
+      setPage(1) 
     }
   }, [page]);
 
@@ -86,15 +86,14 @@ export function MovieProvider({ children }) {
     setHeader("Upcoming Movies");
   }
 
-  // creat local storage
   const GetFavorite = () => {
     setLoader(false);
     setHeader("Favorite Movies");
   }
 
 
-  //<========= firebase Google Authentication ========>
-  const googleProvider = new GoogleAuthProvider();// =====> google auth provide
+  //firebase Google Authentication 
+  const googleProvider = new GoogleAuthProvider();
 
   const GoogleLogin = async () => {
     try {
@@ -106,7 +105,7 @@ export function MovieProvider({ children }) {
       navigate("/")
     }
   }
-  // <==========================================================>
+
 
   return (
     <Contextpage.Provider

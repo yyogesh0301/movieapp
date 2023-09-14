@@ -33,7 +33,6 @@ function Movies() {
     That's why we are first setting page=0, then context page will automatically increment page=1 and the function will run. 
     */
 
-
     return (
 
         <div className='w-full bg-[#10141e] md:p-10 mb-20 md:mb-0'>
@@ -67,7 +66,7 @@ function Movies() {
                     }
                 </AnimatePresence>
             </motion.div>
-            {/* <Pagebtn /> */}
+            
 
         </div>
     )
