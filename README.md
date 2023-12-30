@@ -1,6 +1,7 @@
 <h1>MovieInfo is a Website that provides information on 1000's of movies such as titles, posters, cast and crew, trailers, and many more.  </h1>
-
-
+<br>
+Live Website - https://movieinfor.netlify.app/
+<br>
 <h2>The Different Pages and Components Are::- </h2>
                                                                                                                                                                                        
 **1.Home Page Where you get Multiple Genres of Movies**
